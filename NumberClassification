@@ -1,0 +1,106 @@
+
+/**
+ * This assignment uses booleans to tell information about an inpouited interget.
+ *
+ * @lmad
+ * @3/21
+ */
+import java.util.Scanner;
+
+public class NumberClassification
+{
+    public static void main(String[] args)
+    {
+        Scanner in = new Scanner(System.in);
+        System.out.print("Sauce me an integer fam");
+        int num =in.nextInt();
+        
+        //././././././././.// using if statements, declare the following booleans
+        /*
+         * isOdd
+         * isEven
+         * isPositive
+         * isNegative
+         * isZero
+         * is divisble by 17
+         * is more than 100
+         */
+        boolean isOdd;//done
+        boolean isEven;//done
+        boolean isPositive;//done
+        boolean isNegative;//done
+        boolean isZero;//done
+        boolean isdivisbleBy17;//done
+        boolean ismoreThan100;
+        if(num % 2 == 1)
+        {
+           isOdd = true;
+        }
+        else
+        {
+            isOdd = false;
+        }
+        
+        if(num < 0)
+        {
+            isNegative = true;
+        }
+        else
+        {
+            isNegative = false;
+        }
+        
+        if(num % 2 == 0)
+        {
+            isEven = true;
+        }
+        else
+        {
+            isEven = false;
+        }
+        
+        if(num > 0) 
+        {
+            isPositive = true;
+        }
+        else
+        {
+            isPositive = false;
+        }
+        
+        if(num == 0)
+        {
+            isZero = true;
+        }
+        else
+        {
+            isZero = false;
+        }
+        
+        if(num % 17 == 0)
+        {
+            isdivisbleBy17 = true;
+        }
+        else
+        {
+            isdivisbleBy17 = false;
+        }
+        
+        if(num > 100)
+        {
+           ismoreThan100 = true;
+        }
+        else
+        {
+           ismoreThan100 = false;
+        }
+       System.out.println("The integer " + num + " has the following properties.");
+       System.out.print("This number is odd: " + isOdd);
+       System.out.print("This number is even: " + isEven);
+       System.out.print("This number is positive: " + isPositive);
+       System.out.println("This number is negative: " + isNegative);
+       System.out.print("This number is equal to zero: " + isZero);
+       System.out.print("This number is divisible by 17: " + isdivisbleBy17);
+       System.out.print("This number is more than 100: " + ismoreThan100);
+    }
+}
